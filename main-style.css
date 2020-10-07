@@ -1,0 +1,61 @@
+body {
+    #background-image: url(assets/jared-arango-1-mh6U3qeGQ-unsplash.jpg);
+    #background-repeat: no-repeat;
+    #background-size: cover;
+    background-color: lightgoldenrodyellow;
+    margin: 0;
+    line-height: 1;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    #background-color: black;
+}
+
+ul.topnav-right li {
+    list-style: none;
+    float: left;
+    margin: 0px;
+}
+
+ul.topnav-right li a {
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+    min-height: 15px;
+    text-transform: uppercase;
+    color: black;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px white;
+}
+
+ul.topnav-right li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.intro {
+    display: block;
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    padding-top: 180px;
+    line-height: 30px;
+    text-shadow: 2px 2px 5px white;
+    #box-shadow: 3px 5px 3px white;
+    font-size: 20px;
+}
+.image-credit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: whitesmoke;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
