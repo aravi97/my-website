@@ -1,10 +1,14 @@
 body {
     #background-image: url(assets/jared-arango-1-mh6U3qeGQ-unsplash.jpg);
-    #background-repeat: no-repeat;
     #background-size: cover;
-    background-color: lightgoldenrodyellow;
+    background-image: linear-gradient(black, darkred);
     margin: 0;
     line-height: 1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 nav {
@@ -19,36 +23,37 @@ nav ul {
     #background-color: black;
 }
 
-ul.topnav-right li {
+ul.topnav-main li {
     list-style: none;
     float: left;
-    margin: 0px;
+    margin: 0;
 }
 
-ul.topnav-right li a {
+ul.topnav-main li a {
     display: block;
     text-decoration: none;
     padding: 25px;
     min-height: 15px;
     text-transform: uppercase;
-    color: black;
+    color: white;
     font-family: "Lucida Console", Courier, monospace;
     font-size: 20px;
-    text-shadow: 2px 2px 5px white;
+    #text-shadow: 2px 2px 5px white;
 }
 
-ul.topnav-right li a:hover {
-    background-color: black;
-    color: white;
+ul.topnav-main li a:hover {
+    #background-color: black;
+    text-shadow: 3px 3px 5px white;
 }
 
 .intro {
     display: block;
+    color: white;
     text-align: center;
     font-family: "Lucida Console", Courier, monospace;
     padding-top: 180px;
     line-height: 30px;
-    text-shadow: 2px 2px 5px white;
+    text-shadow: 1px 1px 2px white;
     #box-shadow: 3px 5px 3px white;
     font-size: 20px;
 }
