@@ -11,9 +11,10 @@
     <body>
         
         <nav class="topnav">
-            <ul class="topnav-main">
+            <ul class="topnav-main" id="dropdown-open">
+                <li class="dropdown-menu"><a href="javascript:void(0);" onclick="dropdownClick()">&#9776;</a></li>
                 <li><a href="#home">Home</a></li>               
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>               
             </ul>
         </nav>
         
@@ -34,6 +35,16 @@
             
         </div>
         
+        <script>
+        function dropdownClick(){
+            var navList = document.getElementById("dropdown-open");
+            if(navList.className === "topnav-main"){
+                navList.className += " responsive";
+            } else {
+                navList.className = "topnav-main";
+            }
+        }
+        </script>
     </body>
 
 </html>

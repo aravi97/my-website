@@ -18,14 +18,14 @@ nav {
 }
 
 nav ul {
-    overflow: hidden;
+    overflow: auto;
     margin: 0;
     #background-color: black;
 }
 
 ul.topnav-main li {
     list-style: none;
-    float: left;
+    float: right;
     margin: 0;
 }
 
@@ -55,7 +55,7 @@ ul.topnav-main li a:hover {
     line-height: 30px;
     text-shadow: 1px 1px 2px white;
     #box-shadow: 3px 5px 3px white;
-    font-size: 20px;
+    font-size: 18px;
 }
 .image-credit{
     position: absolute;
@@ -63,4 +63,40 @@ ul.topnav-main li a:hover {
     right: 0;
     color: whitesmoke;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+ul.topnav-main li.dropdown-menu{
+    display: none;
+}
+
+/************* Mobile Support *************/
+
+@media screen and (max-width: 680px){
+    ul.topnav-main li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav-main li.dropdown-menu{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav-main.responsive li.dropdown-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav-main.responsive{
+        position: relative;
+    }
+    
+    ul.topnav-main.responsive li{
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav-main.responsive li a{
+        display: block;
+        text-align: left;
+    }
 }
