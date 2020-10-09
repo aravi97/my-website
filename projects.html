@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+    
+    <head>
+        <title> Aditya Ravichandran </title>
+        
+        <link rel="stylesheet" href="main-style.css">
+    </head>
+    
+    <body>
+        
+        <nav class="topnav">
+            <ul class="topnav-main" id="dropdown-open">
+                <li class="dropdown-menu"><a href="javascript:void(0);" onclick="dropdownClick()">&#9776;</a></li>
+                <li><a href="/index.html">Home</a></li>               
+                <li><a href="/projects.html">Projects</a></li>               
+            </ul>
+        </nav>
+        
+        <div class="project-disc">
+            <p> You can find my projects on <a href="https://github.com/aravi97" style="color: lightgoldenrodyellow; text-decoration: none;">Github</a>. </p>
+            
+        </div>
+        
+        <script>
+        function dropdownClick(){
+            var navList = document.getElementById("dropdown-open");
+            if(navList.className === "topnav-main"){
+                navList.className += " responsive";
+            } else {
+                navList.className = "topnav-main";
+            }
+        }
+        </script>
+    </body>
+
+</html>
